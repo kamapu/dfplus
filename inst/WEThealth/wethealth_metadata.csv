@@ -1,0 +1,47 @@
+ShortName,LongName,Type,Units,Values,Description
+UseunitID,UseunitID,character,,,Identifier for land use units
+Date,Date,integer,,,Coded sampling date (yyyymmdd)
+Country,Country,factor,,"Kenya,Tanzania,Rwanda,Uganda",Sampling country
+Locality,Locality,factor,,"Rumuruti,Ifakara,Kigali,Kampala",Sampling locality
+LUC_Level1,Land use,factor,,"agriculture,grazing_land,fallow,semi_natural_vegetation",Land uses
+Area,Area,numeric,m^2,,Area of units according to UTM coordinates
+Longitude,Longitude,numeric,~degree,,Longitude in degrees (WGS84)
+Latitude,Latitude,numeric,~degree,,Latitude in degrees (WGS84)
+Altitude,Altitude,numeric,m,,Altitude above sea level
+drainage_intensity,Drainage intensity,numeric,,,artificial drainage intensity
+type_flooding,Flooding regime,factor,,"non_f,spor_f,seas_f,perm_f",type of flooding
+WET_hydro,,integer,,,on-site WET-Health score for hydrology
+WET_geo,,integer,,,on-site WET-Health score for geomorphology
+WET_wat,,integer,,,on-site WET-Health score for water quality
+WET_veg,,integer,,,on-site WET-Health score for vegetation
+WET_hydro_off,,numeric,,,off-site WET-Health score for hydrology
+WET_hydro_all,,integer,,,overall WET-Health score for hydrology
+TotalAnnual,Cover of Annual Plants,numeric,%,,cover of annual plants
+TotalPerennial,Cover of Perennial Plants,numeric,%,,cover of perennial plants
+CovCrops,Cover of Crops,numeric,%,,Cover of all crops (including residues) on the plot
+VegCovTotal,Total Vegetation Cover,numeric,%,,Cover of Vegetation incl. Dried plants and litter
+VertStruc,Vertical Structure,numeric,,,"Vertical strucure, number of layers"
+AnnualProp,AnnualProp,numeric,,,Proportion of annuals in the vegetation
+VegCover,VegCover,numeric,,,Vegetation cover (crop cover excluded)
+intensity,Use intensity,factor,,"Non use,Low,Moderate,High",intensity of wetland use for crop production
+soildist,Degree of disturbance,factor,,"No  tillage,Manual tillage,Tillage using ox-plough,Mechanized tillage,Excavated land,In.filled.wetland",Degree of soil disturbance
+fertilizer_p,Fertilizer,factor,,"No,Yes",Was any fertilizer applied on the crop?
+pestcide_p,Pesticide,factor,,"No,Yes",Were any pestcides applied on the crop?
+manure_p,Manure,factor,,"No,Yes",Was any manure applied on the unit?
+livegraze,Grazing,factor,,"No,Yes",Does livestock grazing take place in the use unit?
+regess,Regulatory ESS,factor,,"No,Yes",Use unit providing regulatory ecosystem services
+provess,Provisioning ESS,factor,,"No,Yes",Use unit providing provisioning ecosystem services
+suppoess,Supporting ESS,factor,,"No,Yes",Use unit providing sopporting ecosystem services
+cultess,Cultural ESS,factor,,"No,Yes",Use unit providing cultural ecosystem services
+sellprod,,factor,,"No,Yes",Is the production market driven?
+Irrigation,Irrigation,factor,,"No,Yes",Is the use unit irrigated?
+hhsize,Household size,numeric,,,Household size in number of members
+welroof,,numeric,,,Roof score as an indicator of wealth
+welfloor,,numeric,,,Floor quality score as an indicator of welfare
+welwall,,numeric,,,Wall quality score as an indicator of welfare
+distmkt,Distance to market,numeric,km,,Distance to the nearest shopping centre (km)
+pop,Population density,factor,,"Scarcely populated,Moderately  populated,Densely populated",Population density around the use unit
+tenure,Land tenure,factor,,"Government (public) ownership,Collective ownership,Private indivindual ownership",Security of tenure over land
+InputCrop,InputCrop,numeric,,,Index of amount of inputs in croplands (fertilizer+pestcide+manure+Irrigation)
+Welfare,Welfare,numeric,,,Welfare index ((welroof+welfloor+welwall)/max(welroof+welfloor+welwall))
+ESS,Ecosystem Services,numeric,,,Services provided (regess+provess+suppoess+cultess)
