@@ -8,7 +8,8 @@ Maintainer: Miguel Alvarez <malvarez@uni-bonn.de>
 Depends:
 	R(>= 3.2.0)
 Suggests:
-    devtools
+    devtools,
+    xlsx
 Description: An object class for data frames including metadata ('dfplus') and
 	respective methods for handling those objects.
 License: GPL (>= 2)

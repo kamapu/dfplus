@@ -12,9 +12,9 @@ setClass("dfplus", slots=c(
                         Units=character(), Values=character(),
                         Description=character(), stringsAsFactors=FALSE)),
 		validity=function(object) {
-			if(!all(colnames(object@data) == rownames(object@variables)))
+			if(!all(colnames(object@data) == rownames(object@metadata)))
 				return("column names in slot 'data' do not match row names in slot 'metadata'")
 			if(!all(c("LongName","Type","Units","Values","Description") %in%
-							names(object@variables)))
+							names(object@metadata)))
 				return("column names LongName, Type, Units, Values, and Description are mandatory in slot 'metadata'")
 		})
