@@ -10,3 +10,8 @@ exportMethods(
 	head,tail,
 	names,"names<-"
 )
+
+## Export of regular function names
+export(
+	dfplus
+)

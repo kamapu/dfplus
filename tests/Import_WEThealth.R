@@ -11,8 +11,9 @@ install_github("kamapu/dfplus")
 library(dfplus)
 setwd(file.path(path.package("dfplus"), "wethealth"))
 
-wethealth <- new("dfplus")
-wethealth@data <- read.csv("wethealth_data.csv", stringsAsFactors=FALSE)
-wethealth@metadata <- read.csv("wethealth_metadata.csv", row.names=1,
-        stringsAsFactors=FALSE)
+wethealth <- dfplus(data=read.csv("wethealth_data.csv", stringsAsFactors=FALSE),
+        metadata=read.csv("wethealth_metadata.csv", row.names=1,
+                stringsAsFactors=FALSE),
+        skip.deprecated=FALSE)
+
 validObject(wethealth)
