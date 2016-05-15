@@ -2,3 +2,10 @@
 exportClasses(
 	dfplus
 )
+
+## Export methods
+exportMethods(
+	"[", "[<-", "$", "$<-",
+	head,tail,
+	names,"names<-"
+)
