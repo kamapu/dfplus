@@ -6,6 +6,7 @@ exportClasses(
 ## Export methods
 exportMethods(
 	"[", "[<-", "$", "$<-",
+	deprecated,skip_deprecated,
 	head,tail,
 	names,"names<-"
 )
