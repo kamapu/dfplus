@@ -27,5 +27,11 @@ setGeneric("skip_deprecated", function(x, ...)
             standardGeneric("skip_deprecated"))
 
 setMethod("skip_deprecated", signature(x="dfplus"),
-        function(x, ...) return(x[,!deprecated(x)])
+        function(x, ...) {
+            Index <- x@metadata$Type == "deprecated"
+            x <- new("dfplus",
+                    data=x@data[,!Index,drop=FALSE],
+                    metadata=x@metadata[!Index,,drop=FALSE])
+            return(x)
+        }
 )
