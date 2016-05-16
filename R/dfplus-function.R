@@ -25,7 +25,7 @@ dfplus <- function(data, metadata, skip.deprecated=TRUE, ...) {
     # formatting Date
     Types <- grep("Date", metadata$Type)
     for(i in Types) {
-        data[,i] <- as.Data(data[,i], format=metadata[i,"Units"], ...)
+        data[,i] <- as.Date(data[,i], format=metadata[i,"Units"], ...)
     }
     # final object
     data <- new("dfplus", data=data, metadata=metadata)
