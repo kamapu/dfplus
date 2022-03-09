@@ -17,3 +17,4 @@ Description: An object class for data frames including metadata ('dfplus') and
 License: GPL (>= 2)
 URL: https://github.com/kamapu/dfplus
 BugReports: https://github.com/kamapu/dfplus/issues
+RoxygenNote: 7.1.2
